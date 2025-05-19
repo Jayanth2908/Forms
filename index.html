@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        input[type="radio"]:checked {
+        animation: blink 5s infinite;
+        transform: scale(1.1);
+        }
+
+        input[type="radio"] {
+        accent-color: #05b8f9;
+        margin-right: 5px;
+        }
+
+    </style>
+    
+
+
+</head>
+<body>
+    <center><h1>Job Application</h1></center>
+
+    <form>
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label>First Name*</label></td>
+                    <td><input type="text" name="firstname" required></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name*</label></td>
+                    <td><input type="text" name="lastname" required></td>
+                </tr>
+                <tr>
+                    <td><label>Date Of Birth*</label></td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td colspan="3">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"> 
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="profile">Profile Picture*</label></td>
+                    <td><input type="file" id="profile" name="profile" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Contact Information</legend>
+            <table>
+                <tr>
+                    <td><label for="email">Email*</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Phone Number*</label></td>
+                    <td><input type="tel" id="mobile" name="mobile" placeholder="10-digit number" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea id="address" name="address" rows="3" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <input list="country" name="country">
+                        <datalist id="country">
+                            <option>India</option>
+                            <option>Pakistan</option>
+                        </datalist>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Educational Background</legend>
+            <table>
+                <tr>
+                    <td><label for="qualification">Highest Qualification</label></td>
+                    <td>
+                        <input list="qualification" name="qualification">
+                        <datalist id="qualification">
+                            <option>Graduate</option>
+                            <option>12th/Diploma</option>
+                            <option>SSC</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="specs">Specialization</label></td>
+                    <td><input type="text" id="specs" name="specialization" placeholder="Enter your specialization"></td>
+                </tr>
+                <tr>
+                    <td><label for="YOG">Year Of Graduation</label></td>
+                    <td>
+                        <input list="YOG" name="graduationYear">
+                        <datalist id="YOG">
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                        </datalist>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Job Preference</legend>
+            <table>
+                <tr>
+                    <td><label for="job_prefernce">Preferred Role</label></td>
+                    <td><input type="text" id="job_prefernce" name="preferredRole"></td>
+                </tr>
+                <tr>
+                    <td><label for="sal">Expected Salary</label></td>
+                    <td><input type="text" id="sal" name="expectedSalary"></td>
+                </tr>
+                <tr>
+                    <td><label>Preferred Locations</label></td>
+                    <td>
+                        <input type="checkbox" id="bengaluru" name="pref_loc" value="bengaluru">
+                        <label for="bengaluru">Bengaluru</label>
+                        <input type="checkbox" id="delhi" name="pref_loc" value="delhi">
+                        <label for="delhi">Delhi</label>
+                        <input type="checkbox" id="remote" name="pref_loc" value="remote">
+                        <label for="remote">Remote</label>
+                        <input type="checkbox" id="pune" name="pref_loc" value="pune">
+                        <label for="pune">Pune</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="relocate">Willing to Relocate?</label></td>
+                    <td><input type="checkbox" id="relocate" name="relocate"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Create Account</legend>
+            <table>
+                <tr>
+                    <td><label for="pwd">Password*</label></td>
+                    <td><input type="password" id="pwd" name="password" placeholder="Min 6 characters" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd1">Confirm Password*</label></td>
+                    <td><input type="password" id="pwd1" name="confirmPassword" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Resume</legend>
+            <table>
+                <tr>
+                    <td><label for="Resume">Upload Resume (PDF only*)</label></td>
+                    <td><input type="file" id="Resume" name="Resume" accept=".pdf" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Agreement</legend>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="agree" name="agree" required></td>
+                    <td><label for="agree">I agree to the terms and conditions*</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" onclick="window.open('https://thetapacademy.com/','_blank')">Submit Application</button>
+                        <button type="reset" onclick="window.open('https://thetapacademy.com/','_blank')">Reset Form</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
