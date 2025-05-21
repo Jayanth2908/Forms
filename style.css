@@ -1,0 +1,198 @@
+body{
+
+    background-color:black;
+    color:beige;
+    @import url('https://fonts.cdnfonts.com/css/huntesla-gloficka');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+
+
+
+    
+
+}
+
+
+
+form{
+
+
+    background-attachment: fixed;
+    width: 50% ;
+    
+
+
+
+}
+
+fieldset{
+
+
+    background-color: rgba(3, 239, 243, 0);
+    color: rgb(241, 246, 248);
+    border: 3px dotted rgb(4, 255, 0);
+
+    
+
+}
+
+
+legend{
+
+
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: 10px;
+    padding: 10px;
+
+    color: aquamarine;
+
+    
+
+
+
+}
+
+
+
+
+
+input[required]{
+
+    background-color: rgb(255, 253, 239);
+
+    color: rgb(18, 12, 2);
+
+    border: 2px solid rosybrown;
+
+
+
+}
+
+
+
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .radio-group input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-group label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    color: #c82929;
+  }
+  
+  .radio-group label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  
+  .radio-group label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1);
+  }
+  
+  /* Fill colors based on selected radio */
+  input#male:checked + label::after {
+    background-color: blue;
+    opacity: 1;
+  }
+  
+  input#female:checked + label::after {
+    background-color: rgb(244, 124, 184);
+    opacity: 1;
+  }
+  
+  input#other:checked + label::after {
+    background-color: brown;
+    opacity: 1;
+  }
+  
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 8px;
+    background-color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: aqua;
+    border-color: aqua;
+  }
+  
+  input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  input[type="checkbox"]:checked::after {
+    display: block;
+  }
+
+
+
+  /* Submit Button Style */
+.button-group button[type="submit"] {
+    background-color: #033338; /* Royal Aqua Blue */
+    color: white;
+  }
+  
+  .button-group button[type="submit"]:hover {
+    background-color: #00aac2; /* Slightly darker on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Reset Button Style */
+  .button-group button[type="reset"] {
+    background-color: #162021; /* Royal Aqua Blue */
+    color: white;
+  }
+  
+  .button-group button[type="reset"]:hover {
+    background-color: #212222; /* Slightly darker on hover */
+    transform: scale(1.05);
+  }
+  
+  
