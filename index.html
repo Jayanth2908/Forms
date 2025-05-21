@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
     <style>
-        input[type="radio"]:checked {
+        /* input[type="radio"]:checked {
         animation: blink 5s infinite;
         transform: scale(1.1);
         }
@@ -13,7 +14,7 @@
         input[type="radio"] {
         accent-color: #05b8f9;
         margin-right: 5px;
-        }
+        } */
 
     </style>
     
@@ -21,11 +22,12 @@
 
 </head>
 <body>
-    <center><h1>Job Application</h1></center>
+    
 
     <form>
-        
+        <center><h1>Job Application</h1></center>
         <fieldset>
+            
             <legend>Personal Information</legend>
             <table>
                 <tr>
@@ -42,14 +44,21 @@
                 </tr>
                 <tr>
                     <td><label>Gender</label></td>
-                    <td colspan="3">
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female"> 
-                        <label for="female">Female</label>
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label>
-                    </td>
+                    <div class="radio-group">
+                        <td colspan="3">
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                              
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                              
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                              </div>
+                        </td>
+                    </div>
+                    
                 </tr>
                 <tr>
                     <td><label for="profile">Profile Picture*</label></td>
@@ -184,15 +193,20 @@
         <fieldset>
             <legend>Agreement</legend>
             <table>
-                <tr>
+                <tr><div class="agree-checkbox">
                     <td><input type="checkbox" id="agree" name="agree" required></td>
                     <td><label for="agree">I agree to the terms and conditions*</label></td>
+               
+                </div>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button type="submit" onclick="window.open('https://thetapacademy.com/','_blank')">Submit Application</button>
-                        <button type="reset" >Reset Form</button>
-                    </td>
+                        <div class="button-group">
+                            <button type="submit" onclick="window.open('https://thetapacademy.com/','_blank')">Submit Application</button>
+                        <button type="reset" onclick="location.reload()">Reset Page</button>
+                    
+                        </div>
+                        </td>
                 </tr>
             </table>
         </fieldset>
